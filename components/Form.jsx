@@ -17,7 +17,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 
                 <label>
                     <span className='font-satoshi font-semibold text-base text-gray-700'>Tag {` `} <span className='font-normal'>(#product, #webdev, #idea)</span></span>
-                    <input value={post.tag} onChange={(e) => setPost({...post, tag: e.target.value})} placeholder='#tag' required className='form_input'/>
+                    <input type='text' value={post.tag} onChange={(e) => setPost({...post, tag: e.target.value})} placeholder='tag' required className='form_input'/>
                 </label>
 
                 <div className='flex-end mx-3 mb-5 gap-4'>
